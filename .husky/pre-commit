@@ -8,4 +8,4 @@ set -e
 
 # Si quieres activar comprobaciones sobre archivos staged en el futuro,
 # instala lint-staged y reemplaza el exit 0 por:
-npx --no -- lint-staged
+npx lint-staged
