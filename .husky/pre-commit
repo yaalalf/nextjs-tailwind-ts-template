@@ -3,9 +3,9 @@ set -e
 
 # Actualmente solo se usa commit-msg para validar los mensajes.
 # Este hook no hace nada para evitar bloqueos en commits locales.
-echo "Skipping pre-commit hook: commit-msg is used to validate commit messages."
-exit 0
+# echo "Skipping pre-commit hook: commit-msg is used to validate commit messages."
+# exit 0
 
 # Si quieres activar comprobaciones sobre archivos staged en el futuro,
 # instala lint-staged y reemplaza el exit 0 por:
-# npx --no -- lint-staged
+npx --no -- lint-staged
