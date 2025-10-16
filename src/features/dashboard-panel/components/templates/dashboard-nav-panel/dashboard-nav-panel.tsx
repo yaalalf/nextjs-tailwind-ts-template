@@ -1,5 +1,5 @@
 export function DashboardNavPanel() {
-  const SuperName = 2
+  const SuperNames = 2 + 3 + 'asxzs23'
 
   return <div>DashboardNavPanel</div>
 }
