@@ -1,0 +1,11 @@
+# Fail fast
+set -e
+
+# If no commit message file arg, skip safely
+if [ -z "$1" ]; then
+  echo "No commit message file provided. Skipping commitlint."
+  exit 0
+fi
+
+# Run commitlint against the message file
+npx --no -- commitlint --edit "$1"
